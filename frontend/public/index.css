@@ -1,0 +1,90 @@
+
+
+
+
+
+
+
+
+.header-nav{
+  background-color: lawngreen;
+  color: white;
+  height: 100px;
+}
+
+.header-wrapper{
+  margin: 0 auto;
+  position: relative;
+  height: 100px;
+  width: 100%;display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-img{
+  position: relative;
+  height: 100%;
+}
+.header-text{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+
+.main-container{
+  background-color: rgb(220, 255, 167);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+}
+.article1{
+  background-color: transparent;
+  
+}
+
+.article2{
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search{
+  border: 2px green solid ;
+  border-radius: 5px;
+}
+.search-input {
+  box-sizing: border-box;
+  width: 200px;
+  height: 30px;
+  text-align: left;
+  background-color: transparent;
+}
+.search-btn{
+  box-sizing: border-box;
+  height: 30px;
+  color: lawngreen;
+  background-color: transparent;
+}
+.search-btn:hover{
+  color: green;
+}
+
+.delete-btn{
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: auto;
+  color: white;
+}
+.delete-btn:hover{
+  background-color: rgb(147, 255, 147);
+  color: rgb(0, 0, 0);
+}
