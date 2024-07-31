@@ -1,5 +1,8 @@
 # sesac-midterm-yangtaewan
-codingon 0731 - middle-test-repo sesac-midterm-yangtaewan
+codingon 0731 - middle-test-repo
+
+
+sesac-midterm-yangtaewan
 
 
 [공지]
@@ -23,6 +26,13 @@ A. 불가능합니다. 시험 당일 책상 위에는 키보드, 마우스, 물�
 중간평가 때, 줌으로 온라인 감독관이 상주해 있을 예정입니다.
 이 점 유념하여 시험 잘 보시길 바라겠습니다!
 
+
+
+
+
+
+SeSAC_YDP6_MiddleTest
+본 평가에 대한 요구사항 및 채점 항목에 대한 안내입니다. 안내사항을 정확히 이해하고 준수하는 것은 교육생의 책임입니다. 안내사항을 잘못 이해하거나 따르지 않아 발생하는 모든 불이익에 대한 책임은 교육생 본인에게 있습니다.
 
 1. 평가 개요
 본 평가는 청년취업사관학교 영등포캠퍼스 6기 교육 파트너가 실시하는 중간평가 중 정량평가에 해당하는 평가입니다.
