@@ -9,19 +9,15 @@ console.log('1');
 let pagestate=0;
 const todoList = document.querySelector('.todo-list');
 
-
-
 document.addEventListener('DOMContentLoaded',()=>{
   getTodos();
 });
-
 
 function getTodos(){
   axios({
     method :'get',
     url: 'https://jsonplaceholder.typicode.com/todos',
   }).then((res)=>{
-    
     
     const todoPage = res.data.slice(0,10);
     console.log(todoPage);
@@ -38,11 +34,8 @@ function getTodos(){
       todoList.insertAdjacentHTML('afterbegin', inserHtml);
       i= i+1;
     });
-    
   })
 }
-
-
 
 document.querySelector('.search-btn').addEventListener('click', async ()=>{
   addTodo();
@@ -77,21 +70,15 @@ async function addTodo(){
       const inserHtml = 
       `
         <div class="todo-list-element" id="todo-list-element${res.data[element].id}">
-          <input class="check-box" type="checkbox" name="${res.data[element].id}th-content" id="content-${res.data[element].id}">
           <label for="${res.data[element].id}th-content">${res.data[element].title}</label>
-          <div id="delete${res.data[element].id}" class="delete-btn">X</div>
+          <input class="check-box" type="checkbox" name="${res.data[element].id}th-content">
+          <button="delete${res.data[element].id}" class="delete-btn">X</button>
         </div>
       `
       todoList.insertAdjacentHTML('afterbegin', inserHtml);
     })
     
   })
-}
-
-
-function checkState(){
-
-
 }
 
 document.querySelectorAll('.delete-btn').forEach((element)=>{

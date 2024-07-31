@@ -84,7 +84,7 @@
   border-radius: 4px;
   text-align: center;
   box-sizing: border-box;
-  padding: auto;
+  padding: 5px;
   color: white;
 }
 .delete-btn:hover{
