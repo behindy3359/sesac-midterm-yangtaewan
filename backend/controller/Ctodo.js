@@ -11,7 +11,7 @@ exports.todoGet = async (req, res)=>{
     }
   }
   catch(err){
-
+    return res.status(500).send({"message": "Internal Server Error"});
   }
 }
 exports.todoPost = async (req, res)=>{
@@ -40,13 +40,13 @@ exports.todoGetById = async (req, res)=>{
     const id = req.params.id;
 
     const result = await db.Todo.findOne({
-      where: { id : id}
+      where: { id }
     })
 
     if (result) {
       return res.status(200).send({result});
     }else{
-      return res.status(403).send({"message": "Todo not found"});
+      return res.status(404).send({"message": "Todo not found"});
     }
 
   }
@@ -66,7 +66,7 @@ exports.todoPatch = async (req, res)=>{
     });
 
     if (!result) {
-      return res.send({"message": "Todo not found"})
+      return res.status(404).send({"message": "Todo not found"})
     }
     
     await result.update({title, done});
@@ -74,9 +74,8 @@ exports.todoPatch = async (req, res)=>{
     return res.status(200).send({result});
   }
   catch(err){
-
+    return res.status(500).send({"message": "Internal Server Error"});
   }
-  
 }
 exports.todoDelete = async (req, res)=>{
   try{
@@ -84,12 +83,14 @@ exports.todoDelete = async (req, res)=>{
     const result = await db.Todo.destroy({
       where: { id },
     });
+
     if (result) {
       return res.status(200).send({"message": "Todo deleted successfully","deletedId": "1"})
     }else{
-      return res.status(403).send({"message": "Todo not found"});
+      return res.status(404).send({"message": "Todo not found"});
     }
   }
   catch(err){
+    return res.status(500).send({"message": "Internal Server Error"});
   }
 }

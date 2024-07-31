@@ -33,7 +33,7 @@ GET {{server}}/todos
 
 
 ### 특정 ID를 갖는 Todo 조회 (case1. 존재하는 Todo ID로 조회하는 경우)
-GET {{server}}/todos/5
+GET {{server}}/todos/1
 
 
 ### 특정 ID를 갖는 Todo 조회 (case2. 존재하지 않는 Todo ID로 조회하는 경우)
@@ -41,11 +41,11 @@ GET {{server}}/todos/100
 
 
 ### 특정 ID를 갖는 Todo 수정 (case1. 존재하는 Todo ID로 수정하는 경우)
-PATCH {{server}}/todos/5
+PATCH {{server}}/todos/6
 Content-Type: application/json; charset=UTF-8
 
 {
-  "done": false
+  "done": true
 }
 
 

@@ -3,8 +3,8 @@ const express = require("express");
 const app = express();
 const { sequelize } = require(`./models/index`);
 
-app.set("view engine", "ejs");
-app.set("views", "views");
+// app.set("view engine", "ejs");
+// app.set("views", "views");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -14,7 +14,7 @@ app.use(express.json());
 const port = process.env.PORT || 8080;
 
 // 미들웨어 등록
-app.use(`/static`, express.static(__dirname + `/public`));
+// app.use(`/static`, express.static(__dirname + `/public`));
 
 
 const todoRouter = require('./routes/todo');
@@ -22,10 +22,10 @@ app.use('/',todoRouter);
 
 
 
-// 404
-app.get("*", (req, res) => {
-  res.render("404");
-});
+// // 404
+// app.get("*", (req, res) => {
+//   res.render("404");
+// });
 
 sequelize
   // force : true ; 서버 실행할 때마다 테이블 재생성
