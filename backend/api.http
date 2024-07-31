@@ -41,7 +41,7 @@ GET {{server}}/todos/100
 
 
 ### 특정 ID를 갖는 Todo 수정 (case1. 존재하는 Todo ID로 수정하는 경우)
-PATCH {{server}}/todos/6
+PATCH {{server}}/todos/1
 Content-Type: application/json; charset=UTF-8
 
 {
